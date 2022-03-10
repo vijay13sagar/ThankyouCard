@@ -1,38 +1,120 @@
 .App {
   text-align: center;
+  background-image: url('https://cdn.shopify.com/s/files/1/0222/9834/products/shutterstock_141076960_1024x1024.jpg?v=1588711080');
+  width: 100vw-20px;
+  min-height: 120vh;
+  background-size: contain;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ .happy{
+  padding: 0;
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: 900;
+  width: 50%;
+  color: aqua;
+  text-shadow: 2px 1px rgb(255, 5, 46);
+  font-family:'Cormorant Upright', serif;
+  position: relative;
+  animation: move 1s linear 1 ;
+ }
+ @keyframes move {
+  from {left: -200px}
+  to { left: 0px}
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+ .frst{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding-top: 3%;
+   overflow: hidden;
+   margin: 0;
+ }
+ @media  (max-width: 800px) {
+   .frst{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+   }
+   .dp{
+    width: 100%;
+    height: 100%;
+    border-radius: 80%;
   }
-}
+  .happy{
+    width: 80%;
+  }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+ .card{
+  background-color: white;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 5vw;
+  box-shadow: 0px 0px 5px grey;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  animation: bounce 5s infinite;
+  position: relative;
+  overflow: hidden;
+ }
+ .im1{
+  right:0%;
+ }
+ .im2{
+  right:45%;
+ }
+ .im3{
+  right:10%;
+ }
+ .im4{
+  right:40%;
+ }
+ .im5{
+  right:20%;
+ }
+ .im6{
+  right:30%;
+ }
+ .im7{
+  right:10%;
+ }
+ .im8{
+  right:40%;
+ }.im1{
+  right:25%;
+ }
+
+ 
+@keyframes bounce {
+  0%{
+    transform: translateX(0px) rotateZ(0deg);
+  }
+  100% {
+    transform:translateX(1000px) rotateZ(360deg);
+  }
+}
+ .cardimg{
+  width: 90%;
+  height: 90%;
+  border-radius: 90%;
+ }
+ .dp{
+   width: 30%;
+   border-radius: 50%;
+ }
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: aqua;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-thumb{
+  background-color: rgb(0, 131, 253);
+  border-radius: 10px;
 }
